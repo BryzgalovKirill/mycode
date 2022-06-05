@@ -2,20 +2,20 @@
 
 using namespace std;
 
-int main()
+int main() 
 {
-    setlocale(0, "rus");
-    
-    cout << "Введите число: ";
-    int x;
-    cin >> x;
+	setlocale(0, "rus");
 
-    while (x < 10)
-    {
-        cout << x << " * " << x << " = " << x * x << endl;
-        x++;
-    }
-    
-    
-    return 0;
+	for (int x = 1; x < 10; x++) 
+	{
+		for (int y = 1; y < 10; y++) 
+		{
+			cout << x * y << "\t";
+		}
+
+	 cout << endl;
+	}
+
+
+	return 0;
 }
